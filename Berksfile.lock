@@ -1,0 +1,7 @@
+DEPENDENCIES
+  custom_apache
+    path: .
+    metadata: true
+
+GRAPH
+  custom_apache (0.2.0)

@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: custom_apache
+# Cookbook:: custom_apache
 # Recipe:: default
 #
-# Copyright (c) 2015 The Authors, All Rights Reserved.
+# Copyright:: (c) 2015 The Authors, All Rights Reserved.
 
 #################################################
 # This demonstrates CHEF-4: Some Attribute Methods.
@@ -49,10 +49,8 @@ user content_owner do
   group content_group
   home "/home/#{content_owner}"
   shell '/bin/bash'
-  supports({
-    manage_home true,
-    non_unique false
-  })
+  manage_home true
+  non_unique false
 end
 
 # Use the custom site resource to configure the website.
